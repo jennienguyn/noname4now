@@ -1,0 +1,156 @@
+body {
+    background: url('https://images8.alphacoders.com/767/767470.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Satoshi', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.heart {
+    width: 21.6px;
+    height: 21.6px;
+    fill: #f0f0f0;
+    vertical-align: -5px;
+    filter:
+        drop-shadow(0 0 5px rgba(180, 200, 220, 0.6))
+        drop-shadow(0 0 12px rgba(140, 160, 180, 0.45))
+        drop-shadow(0 0 24px rgba(100, 120, 140, 0.3));
+}
+
+.profile-content h1 {
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow:
+        0 0 5px rgba(180, 200, 220, 0.6),
+        0 0 12px rgba(140, 160, 180, 0.45),
+        0 0 24px rgba(100, 120, 140, 0.3);
+}
+
+.profile-content h3 {
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow:
+        0 0 5px rgba(180, 200, 220, 0.6),
+        0 0 12px rgba(140, 160, 180, 0.45),
+        0 0 24px rgba(100, 120, 140, 0.3);
+}
+
+.social-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon svg {
+    width: 36px;
+    height: 36px;
+    fill: #f0f0f0;
+    filter:
+        drop-shadow(0 0 5px rgba(180, 200, 220, 0.6))
+        drop-shadow(0 0 12px rgba(140, 160, 180, 0.45))
+        drop-shadow(0 0 24px rgba(100, 120, 140, 0.3));
+    transition: 0.3s ease;
+}
+
+.social-icon svg:hover {
+    fill: #ffffff;
+    filter:
+        drop-shadow(0 0 8px rgba(200, 220, 240, 0.8))
+        drop-shadow(0 0 18px rgba(160, 190, 220, 0.6))
+        drop-shadow(0 0 32px rgba(120, 150, 180, 0.4));
+    transform: scale(1.12);
+}
+
+.content {
+    margin: 0 auto; 
+}
+
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 118px;
+    height: 118px;
+}
+
+.avatar-img {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.discord{
+    overflow: visible;
+    width: 36px;
+    height: 40.8px;
+}
+
+.facebook {
+    width: 36px;
+    height: 40.8px;
+}
+
+.github {
+    width: 36px;
+    height: 40.8px;
+}
+
+.discord .mescopy {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 15%;
+    transform: translateX(-50%);
+    padding: 5.4px 5.4px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 4px;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+.discord:hover .mescopy {
+  opacity: 1;
+}
+
+.profile-box {
+    width: 650px;
+    height: 420px;
+
+    padding: 35px 15px;
+    box-sizing: border-box;
+
+    border-radius: 20px;
+    background-color: rgba(27, 27, 27, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+
+    pointer-events: auto;
+}
+
+.profile-content {
+    width: 100%;
+    max-width: 566px;
+    margin: 0 auto;
+}
